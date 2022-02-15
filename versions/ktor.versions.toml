@@ -1,0 +1,13 @@
+[versions]
+ktor = "1.6.1"
+ktor-common = "1.0.27"
+
+[libraries]
+serverCore = { group = "io.ktor", name = "ktor-server-core", version.ref = "ktor" }
+serverNetty = { group = "io.ktor", name = "ktor-server-netty", version.ref = "ktor" }
+client = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
+cio = { group = "io.ktor", name = "ktor-client-cio", version.ref = "ktor" }
+testHost = { group = "io.ktor", name = "ktor-server-test-host", version.ref = "ktor" }
+
+[bundles]
+ktorBundle = ["serverCore", "serverNetty"]

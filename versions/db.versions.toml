@@ -1,0 +1,12 @@
+[versions]
+exposed = "0.35.1"
+h2 = "1.4.200"
+
+[libraries]
+exposedCore = { group = "org.jetbrains.exposed", name = "exposed-core", version.ref = "exposed" }
+exposedDao = { group = "org.jetbrains.exposed", name = "exposed-dao", version.ref = "exposed" }
+exposedJdbc = { group = "org.jetbrains.exposed", name = "exposed-jdbc", version.ref = "exposed" }
+h2 = { group = "com.h2database", name = "h2", version.ref = "h2" }
+
+[bundles]
+exposedWithH2 = ["exposedCore", "exposedDao", "exposedJdbc", "h2"]
