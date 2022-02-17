@@ -1,21 +1,24 @@
-package no.miles.kotlin
+package no.miles.kw
 
 import io.ktor.application.*
+import io.ktor.response.*
 import io.ktor.routing.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
-import no.miles.kotlin.db.Shoe
-import no.miles.kotlin.db.ShoeTableDao
+import no.miles.kw.db.Shoe
+import no.miles.kw.db.ShoeTableDao
 import org.h2.jdbcx.JdbcDataSource
 import org.jetbrains.exposed.sql.Database
 import javax.sql.DataSource
+
+const val fileName = "/shoes.txt"
 
 fun main() {
     val server = Services()
     server.nettyServer.start(wait = true)
 }
 
-class Services() {
+class Services {
 
     private val db = Db()
     private val controller: Controller = Controller(db.dao)
@@ -27,7 +30,14 @@ class Services() {
     val nettyServer = embeddedServer(Netty, port = 8080) {
         routing {
             get("/") {
-                controller.getAll(call)
+                call.respondText("Hello World")
+            }
+            get("/shoes") {
+                println(call.request.queryParameters["test"])
+                controller.query(call)
+            }
+            get("/sizes"){
+                controller.queryBySize(call)
             }
         }
     }
@@ -41,13 +51,18 @@ class Db {
     init {
         dao.createTable()
         val connect = Database.connect(datasource)
-
         println("Connected to $connect")
     }
 
     fun insertData(){
         println("Gonna insert data")
-        dao.insert(Shoe("Test data", "Cowboy boots"))
+        val fileContent = Db::class.java.getResourceAsStream(fileName).bufferedReader().readLines()
+        fileContent
+            .filter { !it.startsWith("#") }
+            .forEach{
+                val splitted = it.split(";")
+                dao.insert(Shoe(splitted[0].trim(), splitted[1].trim()))
+        }
     }
 
     private fun createH2Datasource() =

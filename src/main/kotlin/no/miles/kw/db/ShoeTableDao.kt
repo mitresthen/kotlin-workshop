@@ -1,4 +1,4 @@
-package no.miles.kotlin.db
+package no.miles.kw.db
 
 
 import org.jetbrains.exposed.sql.*
@@ -15,8 +15,8 @@ class ShoeTableDao(dataSource: DataSource) {
         transaction(database) {
             table.insert {
                 it[table.name] = shoe.name
-                it[table.type] = shoe.type
-            }.also { println("Inserted shoe. (name: ${shoe.name}, type: ${shoe.type}, )") }
+                it[table.brand] = shoe.brand
+            }.also { println("Inserted shoe. (name: ${shoe.name}, type: ${shoe.brand} )") }
     }
 
     fun get(): List<Shoe> =
@@ -32,4 +32,4 @@ class ShoeTableDao(dataSource: DataSource) {
 }
 
 private fun ResultRow.toShoe() =
-    Shoe(this[ShoeTable.name], this[ShoeTable.type])
+    Shoe(this[ShoeTable.name], this[ShoeTable.brand])
