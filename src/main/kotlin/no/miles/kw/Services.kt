@@ -1,7 +1,6 @@
 package no.miles.kw
 
 import io.ktor.application.*
-import io.ktor.response.*
 import io.ktor.routing.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
@@ -21,7 +20,7 @@ fun main() {
 class Services {
 
     private val db = Db()
-    private val controller: Controller = Controller(db.dao)
+    private val controller: Controller = Controller()
 
     init {
         db.insertData()
@@ -30,14 +29,7 @@ class Services {
     val nettyServer = embeddedServer(Netty, port = 8080) {
         routing {
             get("/") {
-                call.respondText("Hello World")
-            }
-            get("/shoes") {
-                println(call.request.queryParameters["test"])
-                controller.query(call)
-            }
-            get("/sizes"){
-                controller.queryBySize(call)
+                controller.helloWorld(call)
             }
         }
     }
