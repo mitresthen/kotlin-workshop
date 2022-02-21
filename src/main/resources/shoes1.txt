@@ -12,7 +12,6 @@ Adidas Vinter; Adidas; SNEAKER; Rosa; Herre; Vinter;
 Adidas Vinter; Adidas; SNEAKER; Blå; Dame; Vinter;
 Nike Jordan Vinter; Nike; SNEAKER; Rød; Herre; Vinter;
 Nike Jordan Vinter; Nike; SNEAKER; Rosa; Dame; Vinter;
-
 #Boots
 Adidas 3 stripes; Adidas; SNEAKER; Rosa; Herre;;
 Adidas 3 stripes; Adidas; SNEAKER; Blå; Dame;;
@@ -26,7 +25,6 @@ Adidas Vinter; Adidas; SNEAKER; Rosa; Herre; Vinter;
 Adidas Vinter; Adidas; SNEAKER; Blå; Dame; Vinter;
 Nike Jordan Vinter; Nike; SNEAKER; Rød; Herre; Vinter;
 Nike Jordan Vinter; Nike; SNEAKER; Rosa; Dame; Vinter;
-
 #Sandals
 Birkenstock Herre; Birkenstock; SANDAL; Rosa;;;
 Ecco Sandals Herre; Ecco; SANDAL; Rød;;;
