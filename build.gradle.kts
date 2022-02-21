@@ -14,9 +14,10 @@ repositories {
 
 
 dependencies {
-    //implementation ("org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion")
     implementation(ktor.bundles.ktorBundle)
-    implementation(db.bundles.exposedWithH2)
+    implementation(db.bundles.exposedWithH2)// https://mvnrepository.com/artifact/com.google.code.gson/gson
+    implementation("com.google.code.gson:gson:2.7")
+
     testImplementation ("org.junit.jupiter:junit-jupiter-api:5.8.2")
     testRuntimeOnly ("org.junit.jupiter:junit-jupiter-engine:5.8.2")
 }
