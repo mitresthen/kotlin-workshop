@@ -41,7 +41,10 @@ Utvid søke-resultat til å vise hvilke størrelser som er tilgjengelig
 
 <H2>Oppgave 7</H2>
 Kalle Kotlin fra Java
-Adidas sko flyttes til nytt lager, så i Java-koden kall ny kotlin tjeneste som henter ut liste med tilgjengelige sko-størrelser.
+Implementer kotlin-variant av <code>ShoeStorage</code> som vi kaller fra java-varianten
+
+<H2>Oppgave 8</H2>
+Fjern java-koden. og utvid kotlin varianten til å ha en funksjon per sko-type.
 
 <H2>Oppgave 8</H2>
 Modeller sko basert på type
