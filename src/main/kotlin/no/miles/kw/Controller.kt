@@ -13,4 +13,7 @@ class Controller {
     }
 
     private fun toJson(theObjet: Any) = gson.toJson(theObjet)
+
+    private fun convertJson(jsonString: String) =
+        gson.fromJson<Map<String, String>>(jsonString, MutableMap::class.java)
 }
