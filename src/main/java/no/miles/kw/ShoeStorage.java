@@ -12,17 +12,17 @@ import java.util.stream.Collectors;
 public class ShoeStorage {
 
 
-    public Map<String, List<Pair<Integer, Integer>>> getShoeSizes(final List<Shoe> shoes){
+    public Map<Shoe, List<Pair<Integer, Integer>>> getShoeSizes(final List<Shoe> shoes){
         return shoes.stream().map(this::getSizes).collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
     }
 
-    private Map.Entry<String, List<Pair<Integer, Integer>>> getSizes(Shoe shoe) {
+    private Map.Entry<Shoe, List<Pair<Integer, Integer>>> getSizes(Shoe shoe) {
         ArrayList<Pair<Integer, Integer>> empty = new ArrayList<>();
         for(int i = 30; i < 45; i++){
             Pair<Integer, Integer> pair = new Pair<>(i, getRandomNumber());
             empty.add(pair);
         }
-        return new AbstractMap.SimpleEntry(shoe.getName(), empty);
+        return new AbstractMap.SimpleEntry(shoe, empty);
     }
 
     public int getRandomNumber() {
