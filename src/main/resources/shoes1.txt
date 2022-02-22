@@ -13,18 +13,10 @@ Adidas Vinter; Adidas; SNEAKER; Blå; Dame; Vinter;
 Nike Jordan Vinter; Nike; SNEAKER; Rød; Herre; Vinter;
 Nike Jordan Vinter; Nike; SNEAKER; Rosa; Dame; Vinter;
 #Boots
-Adidas 3 stripes; Adidas; SNEAKER; Rosa; Herre;;
-Adidas 3 stripes; Adidas; SNEAKER; Blå; Dame;;
-Nike Jordan; Nike; SNEAKER; Rød; Herre;;
-Nike Jordan; Nike; SNEAKER; Rosa; Dame;;
-Adidas Sommer; Adidas; SNEAKER; Rosa; Herre; Sommer;
-Adidas Sommer; Adidas; SNEAKER; Blå; Dame; Sommer;
-Nike Jordan Sommer; Nike; SNEAKER; Rød; Herre; Sommer;
-Nike Jordan Sommer; Nike; SNEAKER; Rosa; Dame; Sommer;
-Adidas Vinter; Adidas; SNEAKER; Rosa; Herre; Vinter;
-Adidas Vinter; Adidas; SNEAKER; Blå; Dame; Vinter;
-Nike Jordan Vinter; Nike; SNEAKER; Rød; Herre; Vinter;
-Nike Jordan Vinter; Nike; SNEAKER; Rosa; Dame; Vinter;
+Timberland Boots Herre; Timberland; BOOT; Rosa; Herre;;
+Timberland Boots Dame; Timberland; BOOT; Blå; Dame;;
+Cattle Drive Western Boots; Ariat; BOOT; Brun; Dame;;
+Kentucky's Western Cowboystøvler; Kentucky's Western; BOOT; Svart; Dame;;
 #Sandals
 Birkenstock Herre; Birkenstock; SANDAL; Rosa;;;
 Ecco Sandals Herre; Ecco; SANDAL; Rød;;;
