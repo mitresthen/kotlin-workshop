@@ -15,16 +15,16 @@ Legg til mulighet for å filtrere på brand
 Utvid sko med flere properties
 - farge
 - målgruppe, valgfritt
-    - mann
-    - kvinne
-    - barn
+  - mann
+  - kvinne
+  - barn
 - type
-    - joggesko
-    - boots
-    - pensko
+  - joggesko
+  - boots
+  - pensko
 - sesong, valgfritt
-    - sommer
-    - vinter
+  - sommer
+  - vinter
 
 Bytt til "shoes1.txt" (lage ny database-fil)
 
@@ -46,5 +46,11 @@ Implementer kotlin-variant av <code>ShoeStorage</code> som vi kaller fra java-va
 <H2>Oppgave 8</H2>
 Fjern java-koden. og utvid kotlin varianten til å ha en funksjon per sko-type.
 
-<H2>Oppgave 8</H2>
+<H2>Oppgave 9</H2>
 Modeller sko basert på type
+
+<H2>Oppgave 10</H2>
+Bruk type for å skille mellom sko, feks ShoeStorage, query.
+
+<H2>Oppgave 11</H2>
+Endre til sealed-class for shoe
