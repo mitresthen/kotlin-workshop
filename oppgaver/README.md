@@ -20,8 +20,9 @@ Returner alle skoene i databasen
 Legg til mulighet for å filtrere på brand
 
   
-
+tips: Bruk det du har lært angående collections
 <code>call.request.queryParameters</code>
+<code>https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/let.html</code>
 
   
 
