@@ -11,7 +11,7 @@
 
 - 10:25 - 11:45 Grunnleggende Kotlin
 
-	- [Hello, Kotlin](https://www.codingame.com/playgrounds/6577/kotlin-tour/hello-kotlin)
+	- [Hello, Kotlin](https://tech.io/playgrounds/6577/kotlin-tour/hello-kotlin)
     - [Nullable Koan](https://pl.kotl.in/1rs0b1p0D)
 
 
@@ -19,6 +19,6 @@
 - 12:30 - 14:00 Selvstudier fortsettelse
 	- [Koan classes](https://play.kotlinlang.org/koans/Classes/Data%20classes/Task.kt)
     - [Koan collections](https://play.kotlinlang.org/koans/Collections/Introduction/Task.kt)
-- 14:00 - 16:30 Bygge skobutikk
-- 16:30 - 17:00 Gjennomgang av løsning
-- 17:00 -> ∞   	Mat & Mingel
+- 14:00 - 16:00 Bygge skobutikk
+- 16:00 - 16:30 Gjennomgang av løsning
+- 16:30 -> ∞   	Mat & Mingel
